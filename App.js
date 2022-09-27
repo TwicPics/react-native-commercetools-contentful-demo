@@ -2,8 +2,15 @@ import { StatusBar } from 'expo-status-bar'
 import { useEffect, useState } from 'react'
 import { ActivityIndicator, StyleSheet, View } from 'react-native'
 
+import { installTwicPics } from '@twicpics/components-react-native'
+
 import { getProducts } from './lib/services/commercetools'
 import ProductList from './components/ProductList'
+
+installTwicPics({
+  "domain": "https://7pa5ms8r.twic.pics"
+})
+
 
 export default function App() {
   const [isLoading, setLoading] = useState(false)

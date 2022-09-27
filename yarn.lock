@@ -1804,6 +1804,11 @@
   resolved "https://registry.yarnpkg.com/@sideway/pinpoint/-/pinpoint-2.0.0.tgz#cff8ffadc372ad29fd3f78277aeb29e632cc70df"
   integrity sha512-RNiOoTPkptFtSVzQevY/yWtZwf/RxyVnPy/OcA9HBM3MlGDnBEYL5B41H0MTn0Uec8Hi+2qUtTfG2WWZBmMejQ==
 
+"@twicpics/components-react-native@^0.0.1-alpha-0":
+  version "0.0.1-alpha-0"
+  resolved "https://registry.yarnpkg.com/@twicpics/components-react-native/-/components-react-native-0.0.1-alpha-0.tgz#30093622f08c6e8e562204ffeaf54feacd7857f2"
+  integrity sha512-sRvik9ygZ0/FiujCzl7zeRDXIMHXC7TD5tz+Msnvq3SisjB0zeYD9LqjNMnS2DRc8EwK6Vag3B+4R55mLjDRpg==
+
 "@types/glob@^7.1.1":
   version "7.2.0"
   resolved "https://registry.yarnpkg.com/@types/glob/-/glob-7.2.0.tgz#bc1b5bf3aa92f25bd5dd39f35c57361bdce5b2eb"
