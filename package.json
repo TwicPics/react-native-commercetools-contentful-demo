@@ -13,6 +13,7 @@
     "@commercetools/sdk-client-v2": "^1.4.2",
     "@expo/webpack-config": "^0.17.0",
     "@twicpics/components-react-native": "^0.0.1-alpha-0",
+    "contentful": "^9.2.5",
     "expo": "~46.0.9",
     "expo-status-bar": "~1.4.0",
     "react": "18.0.0",

@@ -7,7 +7,7 @@ const styles = StyleSheet.create({
   }
 })
 
-const cleanUrl = (fullUrl) => {
+const twicpicsURL = (fullUrl) => {
   return fullUrl.replace(
     "https://s3-eu-west-1.amazonaws.com/commercetools-maximilian", // the source URL
     "bp-commercetools" // the path
@@ -19,7 +19,7 @@ const renderItem = ({ item: product }) => (
     <TwicImg
       mode="cover"
       style={styles.image}
-      src={cleanUrl(product.masterData.current.masterVariant.images[0].url)}
+      src={twicpicsURL(product.masterData.current.masterVariant.images[0].url)}
     />
   </View>
 )
@@ -27,7 +27,6 @@ const renderItem = ({ item: product }) => (
 export default function ProductList({ products }) {
   return (
     <View>
-      <Text>ProductList</Text>
       <FlatList
         data={products}
         keyExtractor={({ id }) => id}
