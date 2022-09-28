@@ -2,15 +2,15 @@
 
 ## Development setup
 
-This project runs on Node 16.15.0.
+This project runs on Node 16.15.0. We recommend using [NVM](https://github.com/nvm-sh/nvm) to easily switch Node versions.
 
-Installation
+Installation:
 
 ```sh
 yarn
 ```
 
-Running in local
+Running in local:
 
 ```sh
 # Run for web
