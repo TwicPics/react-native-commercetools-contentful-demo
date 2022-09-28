@@ -1,17 +1,32 @@
 # React Native, Commercetools, and Contentful demo
 
-## Installation
+## Development setup
+
+This project runs on Node 16.15.0.
+
+Installation
 
 ```sh
 yarn
 ```
 
-## Running in development
+Running in local
 
 ```sh
 # Run for web
 yarn web
 ```
+
+Copy `.env.example` as `.env` and update the values using your credentials from TwicPics, Commercetools, and Contentful.
+
+## Data seeding
+
+To make this demo work, go through the following steps. You will need to go through some configuration.
+
+- **TwicPics**: 
+- **Commercetools**: this project uses Commercetools' [SUNRISE sample data](https://docs.commercetools.com/sdk/sunrise-data)
+- **Contentful**: Create a `blogPost` content type that has the following fields: `title` (text), `coverImage` (image), and `excerpt` (text); then, create some blog posts.
+- 
 
 Avantage de TwicPics :
 - Facilité de gérer les images sans avoir à gérer la hauteur

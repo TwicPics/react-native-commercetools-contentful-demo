@@ -7,9 +7,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     marginTop: StatusBar.currentHeight || 0,
-  },
-  content: {
-    padding: 24
   }
 })
 
@@ -35,13 +32,11 @@ export default function () {
 
   return (
     <SafeAreaView style={styles.container}>
-      <View style={styles.content}>
-        {
-          isLoading
-            ? <ActivityIndicator />
-            : <ProductList products={products} />
-        }
-      </View>
+      {
+        isLoading
+          ? <ActivityIndicator />
+          : <ProductList products={products} />
+      }
     </SafeAreaView>
   )
 }

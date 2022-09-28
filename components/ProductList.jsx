@@ -2,6 +2,9 @@ import { View, FlatList, StyleSheet, Text } from 'react-native'
 import { TwicImg } from '@twicpics/components-react-native'
 
 const styles = StyleSheet.create({
+  container: {
+    padding: 24
+  },
   product: {
     marginBottom: 28
   },
@@ -31,6 +34,7 @@ const renderItem = ({ item: product }) => (
     <Text style={styles.title}>{product.masterData.current.name.en}</Text>
     <TwicImg
       mode="cover"
+      focus="auto"
       style={styles.image}
       src={twicpicsURL(product.masterData.current.masterVariant.images[0].url)}
     />
@@ -41,6 +45,7 @@ const renderItem = ({ item: product }) => (
 export default function ProductList({ products }) {
   return (
     <FlatList
+      style={styles.container}
       data={products}
       keyExtractor={({ id }, index) => `${id}${index}`}
       renderItem={renderItem}

@@ -5,9 +5,10 @@ import { CONTENTFUL_SPACE_ID } from '@env'
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    padding: 24
   },
   blogPost: {
-    marginBottom: 28
+    marginBottom: 28,
   },
   coverImage: {
     marginBottom: 16
@@ -47,6 +48,7 @@ const renderItem = ({ item: post }) => (
 export default function BlogPostList({ posts }) {
   return (
     <FlatList
+      style={styles.container}
       data={posts}
       keyExtractor={item => item.sys.id}
       renderItem={renderItem}

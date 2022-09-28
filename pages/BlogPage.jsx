@@ -9,9 +9,6 @@ const styles = StyleSheet.create({
     marginTop: StatusBar.currentHeight || 0,
     maxWidth: 1024,
     marginHorizontal: 'auto'
-  },
-  content: {
-    padding: 24
   }
 })
 
@@ -38,13 +35,11 @@ export default function Contentful() {
 
   return (
     <SafeAreaView style={styles.container}>
-      <View style={styles.content}>
-        {
-          isLoading
-            ? <ActivityIndicator />
-            : <BlogPostList posts={posts} />
-        }
-      </View>
+      {
+        isLoading
+          ? <ActivityIndicator />
+          : <BlogPostList posts={posts} />
+      }
     </SafeAreaView>
   )
 }

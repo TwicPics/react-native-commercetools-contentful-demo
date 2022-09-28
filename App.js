@@ -3,8 +3,10 @@ import { NavigationContainer } from '@react-navigation/native'
 import { installTwicPics } from '@twicpics/components-react-native'
 import NavigationStack from './components/NavigationStack'
 
+import { TWICPICS_DOMAIN } from '@env'
+
 installTwicPics({
-  "domain": "https://7pa5ms8r.twic.pics"
+  "domain": TWICPICS_DOMAIN
 })
 
 export default function App() {
