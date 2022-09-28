@@ -1,0 +1,16 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "web",
+			"problemMatcher": [],
+			"label": "npm: web",
+			"detail": "expo start --web",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		}
+	]
+}

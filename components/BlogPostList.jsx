@@ -1,10 +1,25 @@
-import { View, FlatList, StyleSheet } from "react-native"
+import { View, FlatList, StyleSheet, Text } from "react-native"
 import { TwicImg } from "@twicpics/components-react-native"
 import { CONTENTFUL_SPACE_ID } from '@env'
 
 const styles = StyleSheet.create({
-  image: {
-    width: '200px'
+  container: {
+    flex: 1,
+  },
+  blogPost: {
+    marginBottom: 28
+  },
+  coverImage: {
+    marginBottom: 16
+  },
+  title: {
+    fontWeight: 600,
+    fontSize: '2rem',
+    marginBottom: 8
+  },
+  excerpt: {
+    fontSize: 16,
+    color: 'grey'
   }
 })
 
@@ -16,23 +31,25 @@ const twicpicsURL = (fullUrl) => {
 }
 
 const renderItem = ({ item: post }) => (
-  <View>
+  <View style={styles.blogPost}>
     <TwicImg
       mode="cover"
-      style={styles.image}
+      ratio="16:10"
+      style={styles.coverImage}
+      focus="auto"
       src={twicpicsURL(post.fields.coverImage.fields.file.url)}
     />
+    <Text style={styles.title}>{post.fields.name}</Text>
+    <Text style={styles.excerpt}>{post.fields.excerpt}</Text>
   </View>
 )
 
 export default function BlogPostList({ posts }) {
   return (
-    <View>
-      <FlatList
-        data={posts}
-        keyExtractor={item => item.sys.id}
-        renderItem={renderItem}
-      />
-    </View>
+    <FlatList
+      data={posts}
+      keyExtractor={item => item.sys.id}
+      renderItem={renderItem}
+    />
   )
 }

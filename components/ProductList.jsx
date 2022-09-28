@@ -1,9 +1,21 @@
-import { Text, View, FlatList, StyleSheet } from 'react-native'
+import { View, FlatList, StyleSheet, Text } from 'react-native'
 import { TwicImg } from '@twicpics/components-react-native'
 
 const styles = StyleSheet.create({
+  product: {
+    marginBottom: 28
+  },
   image: {
-    width: '200px'
+    marginBottom: 16,
+  },
+  title: {
+    fontWeight: 600,
+    fontSize: 24,
+    marginBottom: 8,
+  },
+  price: {
+    color: 'grey',
+    fontSize: 16
   }
 })
 
@@ -15,23 +27,23 @@ const twicpicsURL = (fullUrl) => {
 }
 
 const renderItem = ({ item: product }) => (
-  <View>
+  <View style={styles.product}>
+    <Text style={styles.title}>{product.masterData.current.name.en}</Text>
     <TwicImg
       mode="cover"
       style={styles.image}
       src={twicpicsURL(product.masterData.current.masterVariant.images[0].url)}
     />
+    <Text style={styles.price}>0.99 €</Text>
   </View>
 )
 
 export default function ProductList({ products }) {
   return (
-    <View>
-      <FlatList
-        data={products}
-        keyExtractor={({ id }) => id}
-        renderItem={renderItem}
-      />
-    </View>
+    <FlatList
+      data={products}
+      keyExtractor={({ id }, index) => `${id}${index}`}
+      renderItem={renderItem}
+    />
   )
 }
