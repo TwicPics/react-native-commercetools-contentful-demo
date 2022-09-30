@@ -7,6 +7,7 @@ This demo project uses:
 - [Commercetools](https://commercetools.com/) to manage products
 - [Contentful](https://www.contentful.com/) to manage blog posts
 - [TwicPics React Native Components](https://npmjs.com/package/@twicpics/components-react-native) to optimize images on-demand
+- [Expo](https://expo.dev/) to manage the development server
 
 ## 🧑‍💻 Development setup
 
