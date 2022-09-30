@@ -1,5 +1,13 @@
 # React Native, Commercetools, and Contentful demo
 
+## Stack
+
+This demo project uses:
+- [React Native](https://reactnative.dev/) and [React Native for Web](https://necolas.github.io/react-native-web/) to build the app
+- [Commercetools](https://commercetools.com/) to manage products
+- [Contentful](https://www.contentful.com/) to manage blog posts
+- [TwicPics React Native Components](https://npmjs.com/package/@twicpics/components-react-native) to optimize images on-demand
+
 ## Development setup
 
 This project runs on Node 16.15.0. We recommend using [NVM](https://github.com/nvm-sh/nvm) to easily switch Node versions.
