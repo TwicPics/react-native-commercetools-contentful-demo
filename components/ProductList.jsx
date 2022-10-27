@@ -1,5 +1,6 @@
 import { View, FlatList, StyleSheet, Text } from 'react-native'
 import { TwicImg } from '@twicpics/components-react-native'
+import { TWICPICS_COMMERCETOOLS_URL, TWICPICS_COMMERCETOOLS_PATH } from '@env'
 
 const styles = StyleSheet.create({
   container: {
@@ -24,8 +25,8 @@ const styles = StyleSheet.create({
 
 const twicpicsURL = (fullUrl) => {
   return fullUrl.replace(
-    "https://s3-eu-west-1.amazonaws.com/commercetools-maximilian", // the source URL
-    "bp-commercetools" // the path
+    TWICPICS_COMMERCETOOLS_URL, // the source URL
+    TWICPICS_COMMERCETOOLS_PATH // the path
   )
 }
 

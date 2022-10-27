@@ -1,6 +1,6 @@
 import { View, FlatList, StyleSheet, Text } from "react-native"
 import { TwicImg } from "@twicpics/components-react-native"
-import { CONTENTFUL_SPACE_ID } from '@env'
+import { TWICPICS_CONTENTFUL_URL, TWICPICS_CONTENTFUL_PATH } from '@env'
 
 const styles = StyleSheet.create({
   container: {
@@ -26,8 +26,8 @@ const styles = StyleSheet.create({
 
 const twicpicsURL = (fullUrl) => {
   return fullUrl.replace(
-    `//images.ctfassets.net/${CONTENTFUL_SPACE_ID}`, // the source URL
-    "bp-contentful" // the path
+    TWICPICS_CONTENTFUL_URL, // the source URL
+    TWICPICS_CONTENTFUL_PATH // the path
   )
 }
 
