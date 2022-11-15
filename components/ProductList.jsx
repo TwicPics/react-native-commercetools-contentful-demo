@@ -1,5 +1,5 @@
 import { View, FlatList, StyleSheet, Text } from 'react-native'
-import { TwicImg } from '@twicpics/components-react-native'
+import { TwicImg } from '@twicpics/components/react-native'
 import { TWICPICS_COMMERCETOOLS_URL, TWICPICS_COMMERCETOOLS_PATH } from '@env'
 
 const styles = StyleSheet.create({

@@ -6,7 +6,7 @@ This demo project uses:
 - [React Native](https://reactnative.dev/) and [React Native for Web](https://necolas.github.io/react-native-web/) to build the app
 - [Commercetools](https://commercetools.com/) to manage products
 - [Contentful](https://www.contentful.com/) to manage blog posts
-- [TwicPics React Native Components](https://npmjs.com/package/@twicpics/components-react-native) to optimize images on-demand
+- [TwicPics React Native Components](https://github.com/TwicPics/components) to optimize images on-demand
 - [Expo](https://expo.dev/) to manage the development server
 
 ## 🧑‍💻 Development setup

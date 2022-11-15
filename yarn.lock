@@ -2008,10 +2008,10 @@
   dependencies:
     defer-to-connect "^2.0.0"
 
-"@twicpics/components-react-native@^0.0.1-alpha":
-  version "0.0.1-alpha.5"
-  resolved "https://registry.yarnpkg.com/@twicpics/components-react-native/-/components-react-native-0.0.1-alpha.5.tgz#bba3b54b86e30c2cb35093f764804f2740f45876"
-  integrity sha512-nbj3R8dvAHG0g9u4WHoEV7Oc+az/Q1zBCdunP811p627vNELCBjYvhPS34JfEAUQXl0ckOU+VBh25I7o6PreHg==
+"@twicpics/components@^0.13.0":
+  version "0.13.0"
+  resolved "https://registry.yarnpkg.com/@twicpics/components/-/components-0.13.0.tgz#80990677868f61607e2e85d264f77c8c170c6d93"
+  integrity sha512-eqnrPzuTCbgMA+tUpowqbJWK3evkEGs6xxFj3n/fFvWbjfIrjTinjteQIeUVpTnlif5+Ls38DTEZGnD1eAOTfA==
 
 "@types/cacheable-request@^6.0.1":
   version "6.0.2"
